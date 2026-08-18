@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html+CSS</title>
+
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+
+        h3{
+            margin-bottom: 0;
+        }
+
+        input{
+            width: 95%;
+            height: 30px;
+            border-radius: 4px;
+        }
+        select{
+            width: 95%;
+            height: 30px;
+            border-radius: 4px;
+        }
+        button{
+            color: white;
+            border-radius: 8px;
+            height: 40px;
+            cursor: pointer;
+        }
+        .cadastrar{
+            background-color: #5582ff;
+            border: none;
+            width: 150px;
+        }
+        .limpar{
+            background-color: #858585;
+            border: none;
+            width: 75px;
+        }
+        textarea{
+            width: 95%;
+            height: 100px;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cadastro de clientes</h1>
+    <p>Preencha os campos abaixo para cadastrar um novo cliente</p>
+
+    <form action="">
+        <h3>Nome completo:</h3>
+        <input type="text" name="nome" placeholder="Digite o nome do cliente">
+
+        <h3>CPF:</h3>
+        <input type="text" name="cpf" placeholder="Digite o CPF">
+
+        <h3>E-mail:</h3>
+        <input type="email" name="email" placeholder="Digite o e-mail">
+
+        <h3>Telefone:</h3>
+        <input type="text" name="telefone" placeholder="Digite o telefone">
+        
+        <h3>Data de nascimento:</h3>
+        <input type="date" name="dataNascimento">
+        
+        <h3>Endereço</h3>
+        <input type="text" name="endereco" placeholder="Digite o endereço">
+        
+        <h3>Cidade</h3>
+        <input type="text" name="cidade" placeholder="Digite a cidade">
+        
+        <h3>Estado</h3>
+        <select name="estado">
+            <option value="--">--</option>
+            <option value="parana">Paraná</option>
+            <option value="sao_paulo">São Paulo</option>
+            <option value="minas_gerais">Minas Gerais</option>
+        </select>
+        
+        <h3>Tipo de cliente:</h3>
+        <select name="tipoCliente">
+            <option value="--">--</option>
+            <option value="sao_paulo">Padrão</option>
+            <option value="minas_gerais">Premium</option>
+        </select>
+        
+        <h3>Observações:</h3>
+        <!-- <input type="text" name="observacoes" placeholder="Digite alguma observação" class="observacoes"> -->
+        <textarea name="observacoes" placeholder="Digite alguma observação"></textarea>
+    </form>
+    
+
+    <p>
+        <button class="cadastrar">Cadastrar</button>
+        <button class="limpar">Limpar</button>
+    </p>
+</body>
+</html>
