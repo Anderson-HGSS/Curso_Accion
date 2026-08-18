@@ -1,112 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html+CSS</title>
 
-    <style>
-        body{
-            display: flex;
-            flex-direction: column;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        h1{
-            text-align: center;
-        }
-        p{
-            text-align: center;
-        }
-
-        h3{
-            margin-bottom: 0;
-        }
-
-        input{
-            width: 95%;
-            height: 30px;
-            border-radius: 4px;
-        }
-        select{
-            width: 95%;
-            height: 30px;
-            border-radius: 4px;
-        }
-        button{
-            color: white;
-            border-radius: 8px;
-            height: 40px;
-            cursor: pointer;
-        }
-        .cadastrar{
-            background-color: #5582ff;
-            border: none;
-            width: 150px;
-        }
-        .limpar{
-            background-color: #858585;
-            border: none;
-            width: 75px;
-        }
-        textarea{
-            width: 95%;
-            height: 100px;
-            resize: none;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
     <h1>Cadastro de clientes</h1>
     <p>Preencha os campos abaixo para cadastrar um novo cliente</p>
 
-    <form>
-        <h3>Nome completo:</h3>
-        <input type="text" name="nome" placeholder="Digite o nome do cliente">
+    <form class="d-flex flex-column gap-3">
+        <div>
+            <label class="form-label fw-bold" for="nome-completo">Nome completo:</label>
+            <input class="form-control" class="form-control" type="text" id="nome-completo" name="nome"
+                placeholder="Digite o nome do cliente">
+        </div>
 
-        <h3>CPF:</h3>
-        <input type="text" name="cpf" placeholder="Digite o CPF">
+        <div>
+            <label class="form-label fw-bold" for="cpf">CPF:</label>
+            <input id="cpf" class="form-control" type="text" name="cpf" placeholder="Digite o CPF">
+        </div>
 
-        <h3>E-mail:</h3>
-        <input type="email" name="email" placeholder="Digite o e-mail">
+        <div>
+            <label class="form-label fw-bold" for="email">E-mail:</label>
+            <input class="form-control" id="email" type="email" name="email" placeholder="Digite o e-mail">
+        </div>
 
-        <h3>Telefone:</h3>
-        <input type="text" name="telefone" placeholder="Digite o telefone">
-        
-        <h3>Data de nascimento:</h3>
-        <input type="date" name="dataNascimento">
-        
-        <h3>Endereço</h3>
-        <input type="text" name="endereco" placeholder="Digite o endereço">
-        
-        <h3>Cidade</h3>
-        <input type="text" name="cidade" placeholder="Digite a cidade">
-        
-        <h3>Estado</h3>
-        <select name="estado">
-            <option value="--">--</option>
-            <option value="parana">Paraná</option>
-            <option value="sao_paulo">São Paulo</option>
-            <option value="minas_gerais">Minas Gerais</option>
-        </select>
-        
-        <h3>Tipo de cliente:</h3>
-        <select name="tipoCliente">
-            <option value="--">--</option>
-            <option value="sao_paulo">Padrão</option>
-            <option value="minas_gerais">Premium</option>
-        </select>
-        
-        <h3>Observações:</h3>
-        <!-- <input type="text" name="observacoes" placeholder="Digite alguma observação" class="observacoes"> -->
-        <textarea name="observacoes" placeholder="Digite alguma observação"></textarea>
+        <div>
+            <label class="form-label fw-bold" for="telefone">Telefone:</label>
+            <input class="form-control" type="text" id="telefone" name="telefone" placeholder="Digite o telefone">
+        </div>
+
+        <div>
+            <label class="form-label fw-bold" for="data-nascimento">Data de nascimento:</label>
+            <input class="form-control" type="date" id="data-nascimento" name="dataNascimento">
+        </div>
+
+        <div>
+            <label class="form-label fw-bold" for="endereco">Endereço</label>
+            <input class="form-control" type="text" id="endereco" name="endereco" placeholder="Digite o endereço">
+        </div>
+
+        <div>
+            <label class="form-label fw-bold" for="cidade">Cidade</label>
+            <input class="form-control" type="text" id="cidade" name="cidade" placeholder="Digite a cidade">
+        </div>
+
+        <div>
+            <label class="form-label fw-bold" for="estado">Estado</label>
+            <select class="form-select" name="estado" id="estado">
+                <option value="--">--</option>
+                <option value="parana">Paraná</option>
+                <option value="sao_paulo">São Paulo</option>
+                <option value="minas_gerais">Minas Gerais</option>
+            </select>
+        </div>
+
+        <div>
+            <label class="form-label fw-bold" for="tipo-cliente">Tipo de cliente:</label>
+            <select class="form-select" name="tipoCliente" id="tipo-cliente">
+                <option value="--">--</option>
+                <option value="sao_paulo">Padrão</option>
+                <option value="minas_gerais">Premium</option>
+            </select>
+        </div>
+
+        <div>
+            <label class="form-label fw-bold">Observações:</label>
+            <textarea class="form-control" name="observacoes" placeholder="Digite alguma observação"></textarea>
+        </div>
+
+        <div>
+            <button class="btn btn-primary">Cadastrar</button>
+            <button class="btn btn-secondary">Limpar</button>
+        </div>
+
     </form>
-    
 
-    <p>
-        <button class="cadastrar">Cadastrar</button>
-        <button class="limpar">Limpar</button>
-    </p>
+
+
+
 </body>
+
 </html>
