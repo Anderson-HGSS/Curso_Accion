@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maioridade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    
+    <h1>Confirmação de Maioridade</h1>
+
+    <div>
+        <label>Insira sua idade:</label>
+        <input type="number" id="idade">
+    </div>
+
+    <button id="botao">Confirmar</button>
+
+    <p id="resposta"></p>
+
+    <script>
+        
+        let botao = document.getElementById("botao");
+        let resposta = document.getElementById("resposta");
+
+        botao.addEventListener("click", function(){
+            let idade = parseInt(document.getElementById("idade").value);
+
+            if(idade >= 18){
+                resposta.innerText = "Você é maior de idade!";
+            }else{
+                resposta.innerText = "Você não é maior de idade!";
+            }
+        });
+
+    </script>
+
+</body>
+</html>
