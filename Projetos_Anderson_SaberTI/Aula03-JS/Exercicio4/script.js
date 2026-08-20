@@ -14,3 +14,5 @@ function aprovacao(){
         resposta.innerText = "Você está de recuperação!"
     }
 }
+
+botao.addEventListener("click", aprovacao);
