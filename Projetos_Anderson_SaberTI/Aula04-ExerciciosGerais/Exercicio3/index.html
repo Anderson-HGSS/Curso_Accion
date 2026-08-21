@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salario líquido</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </head>
+
 <body>
     <h1>Calculo de salário líquido</h1>
     <p>Preencha todos os campos para calcular seu salário líquido para cada mês!</p>
@@ -23,7 +28,85 @@
         <button class="tabLink" onclick="openMonth(event, 'outubro')">Outubro</button>
         <button class="tabLink" onclick="openMonth(event, 'novembro')">Novembro</button>
         <button class="tabLink" onclick="openMonth(event, 'dezembro')">Dezembro</button>
-
     </div>
+
+    <div class="content">
+        <div class="content">
+            <div id="janeiro" class="tabContent">
+                <label>Insira os dados do mês:</label>
+                <input type="number" name="salarioLiq" class="form-control">
+                <input type="number" name="desconto" class="form-control">
+            </div>
+
+            <div id="fevereiro" class="tabContent">
+                <label>Insira os dados do mês:</label>
+                <input type="number" name="salarioLiq" class="form-control">
+                <input type="number" name="desconto" class="form-control">
+            </div>
+
+            <div id="marco" class="tabContent">
+                <label>Insira os dados do mês:</label>
+                <input type="number" name="salarioLiq" class="form-control">
+                <input type="number" name="desconto" class="form-control">
+            </div>
+
+            <div id="abril" class="tabContent">
+                <label>Insira os dados do mês:</label>
+                <input type="number" name="salarioLiq" class="form-control">
+                <input type="number" name="desconto" class="form-control">
+            </div>
+
+            <div id="maio" class="tabContent">
+                <label>Insira os dados do mês:</label>
+                <input type="number" name="salarioLiq" class="form-control">
+                <input type="number" name="desconto" class="form-control">
+            </div>
+
+            <div id="junho" class="tabContent">
+                <label>Insira os dados do mês:</label>
+                <input type="number" name="salarioLiq" class="form-control">
+                <input type="number" name="desconto" class="form-control">
+            </div>
+
+            <div id="julho" class="tabContent">
+                <label>Insira os dados do mês:</label>
+                <input type="number" name="salarioLiq" class="form-control">
+                <input type="number" name="desconto" class="form-control">
+            </div>
+
+            <div id="agosto" class="tabContent">
+                <label>Insira os dados do mês:</label>
+                <input type="number" name="salarioLiq" class="form-control">
+                <input type="number" name="desconto" class="form-control">
+            </div>
+
+            <div id="setembro" class="tabContent">
+                <label>Insira os dados do mês:</label>
+                <input type="number" name="salarioLiq" class="form-control">
+                <input type="number" name="desconto" class="form-control">
+            </div>
+
+            <div id="outubro" class="tabContent">
+                <label>Insira os dados do mês:</label>
+                <input type="number" name="salarioLiq" class="form-control">
+                <input type="number" name="desconto" class="form-control">
+            </div>
+
+            <div id="novembro" class="tabContent">
+                <label>Insira os dados do mês:</label>
+                <input type="number" name="salarioLiq" class="form-control">
+                <input type="number" name="desconto" class="form-control">
+            </div>
+
+            <div id="dezembro" class="tabContent">
+                <label>Insira os dados do mês:</label>
+                <input type="number" name="salarioLiq" class="form-control">
+                <input type="number" name="desconto" class="form-control">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
